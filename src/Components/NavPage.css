@@ -1,0 +1,25 @@
+/* NavPage.css */
+.centered-list {
+  display: flex;
+
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Make the container take the full height */
+}
+
+.centered-list ul {
+  list-style-type: none;
+  width: 70%;
+  font-weight: 500;
+  font-size: x-large; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.centered-list li {
+  margin: 50px 0;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}

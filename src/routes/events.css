@@ -1,0 +1,65 @@
+.eventDiv {
+  background: linear-gradient(180deg, #0b818e 0%, #0e3748 100%);
+  height: max-content;
+  width: 100%;
+}
+
+.heading {
+  text-align: start;
+  padding: 10px;
+  margin: 10px 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.event-card {
+  position: relative; /* To contain the ::before pseudo-element */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  z-index: 1;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; /* Keeps the image above the blur */
+}
+
+.event-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1; /* Keeps the text above the blur */
+}
+
+/* Blurred background */
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--for-background-gradient, #ade2f9); /* Background gradient */
+  filter: blur(100px); /* Apply blur to the background */
+  z-index: 0; /* Ensure it stays behind the content */
+  border-radius: 8px;
+}
+.LogoFoot {
+  color: #fff;
+  text-align: center;
+  font-family: Galdeano;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

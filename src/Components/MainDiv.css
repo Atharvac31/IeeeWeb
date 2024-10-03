@@ -28,7 +28,10 @@
   font-weight: 700;
   line-height: normal;
 }
-
+.bannerDiv {
+  display: flex;
+  margin-left: 55px;
+}
 .subheading {
   text-align: start;
   margin: 10px 20px;

@@ -1,0 +1,81 @@
+.WorkshopDiv {
+  background: linear-gradient(180deg, #0b818e 0%, #0e3748 100%);
+  height: max-content;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: start;
+  padding: 10px;
+  margin: 10px 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Flex layout for larger screens */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.event-card {
+  position: relative;
+  width: 267px; /* Same as the width of your images */
+  margin-bottom: 20px;
+  flex: 1 1 auto;
+}
+
+/* Image styling */
+.event-card img {
+  border-radius: 8px;
+  position: relative;
+  z-index: 1; /* Keeps the image above the blur */
+}
+
+.event-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1; /* Keeps the text above the blur */
+}
+
+/* Blurred background */
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--for-background-gradient, #ade2f9); /* Background gradient */
+  filter: blur(100px); /* Apply blur to the background */
+  z-index: 0; /* Ensure it stays behind the content */
+  border-radius: 8px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .image-container {
+    display: block;
+  }
+
+  .event-card {
+    margin-bottom: 20px;
+    width: 100%; /* Make the card take full width */
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .event-card h2 {
+    font-size: 1.5rem;
+  }
+}

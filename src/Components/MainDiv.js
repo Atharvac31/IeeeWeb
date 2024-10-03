@@ -22,15 +22,30 @@ const MainDiv = () => {
         </span>
       </div>
       <div>
-        <button className="btn">CONNECT</button>
+        <button className="btn">
+          <span>CONNECT</span>
+        </button>
       </div>
       <div>
-        <span className="ieeeText">IEEE WEEK 2025 SOON !!!</span>
+        <span
+          className="ieeeText"
+          style={{
+            textAlign: "start",
+            margin: "20px",
+          }}
+        >
+          IEEE WEEK 2025 SOON !!!
+        </span>
       </div>
       <div className="heading" style={{ margin: "20px" }}>
         <span>ABOUT IEEE-PCE</span>
       </div>
-      <div>
+      <div
+        style={{
+          textAlign: "start",
+          margin: "20px",
+        }}
+      >
         <img src={BigLogo} />
       </div>
 
@@ -92,7 +107,12 @@ const MainDiv = () => {
           <img src={Instagram} />
         </div>
       </div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          margin: "50px",
+        }}
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.669434395333!2d73.12509517394139!3d18.99020098219684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e866de88667f%3A0xc1c5d5badc610f5f!2sPillai%20College%20of%20Engineering%2C%20New%20Panvel%20(Autonomous)!5e0!3m2!1sen!2sin!4v1726135593485!5m2!1sen!2sin"
           style={{ border: "0", width: "271px", height: "447px" }}

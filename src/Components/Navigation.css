@@ -1,0 +1,42 @@
+.navBar {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the first and last items */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Optional padding */
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoDiv {
+  /* Any additional styles for the logoDiv */
+}
+.logoDiv1 {
+  margin: 0px 15px;
+}
+
+.logoDiv1,
+.logoDiv2 {
+  border-radius: 25px;
+  border: 1.5px solid rgba(50, 47, 66, 0.91);
+  background: var(--bluish-purple, #4b3a70);
+}
+
+.logoDiv1 {
+  background: #30edf3;
+}
+
+.logoDiv2 {
+  /* You can add specific styles if needed */
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+.logo {
+  width: 46px;
+  height: 45px;
+  padding: 2px;
+}
