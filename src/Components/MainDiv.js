@@ -26,11 +26,10 @@ const MainDiv = () => {
           <span>CONNECT</span>
         </button>
       </div>
-      <div>
+      <div style={{ display: "flex" }}>
         <span
           className="ieeeText"
           style={{
-            textAlign: "start",
             margin: "20px",
           }}
         >
@@ -101,7 +100,10 @@ const MainDiv = () => {
           </span>
         </div>
         <div style={{ textAlign: "left", padding: "20px 27px" }}>
-          <img src={Linkedin} />
+          <a href="https://www.linkedin.com/company/ieee-pce/">
+            {" "}
+            <img src={Linkedin} />
+          </a>
         </div>
         <div style={{ textAlign: "left", paddingLeft: "27px" }}>
           <img src={Instagram} />

@@ -15,11 +15,26 @@
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
 }
+.closeBtnDiv {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.closeBtnDiv button {
+  background: transparent;
+  color: white;
+  border: none;
+  margin: 10px;
+}
 
 .centered-list li {
-  margin: 50px 0;
+  margin-bottom: 40px;
   padding: 10px 0;
   text-align: center;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+}
+.centered-list li a {
+  color: black;
+  text-decoration: none;
 }
