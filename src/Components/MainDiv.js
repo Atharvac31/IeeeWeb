@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./MainDiv.css";
 import BigLogo from "../images/Rectangle 13 (1).png";
 import Banner from "../images/Banner.jpeg";
 import Linkedin from "../images/Linkedin (1).png";
 import Instagram from "../images/Instagram.png";
 import ClgLogo from "../images/Rectangle 22.png";
+import bgContext from "../contexts/bgContext";
 const MainDiv = () => {
+  const { isLightTheme, setisLightTheme } = useContext(bgContext);
   return (
-    <div className="mainDiv">
-      <div className="heading">
+    <div
+      className="mainDiv"
+      style={{
+        background: isLightTheme
+          ? "linear-gradient(180deg, #def9ff 0%, #30B9F380 100%)"
+          : "linear-gradient(180deg, #0b818e 0%, #0e3748 100%)", // Corrected the linear-gradient syntax
+      }}
+    >
+      <div className="heading" style={{ color: isLightTheme && "black" }}>
         <span>THE WORLDS LARGEST TECHNICAL PROFESSIONAL ORGANIZATION</span>
       </div>
-      <div className="subheading">
+      <div className="subheading" style={{ color: isLightTheme && "black" }}>
         <span>FOR THE ADVANCEMENT OF TECHNOLOGY</span>
       </div>
-      <div className="subTitle">
+      <div className="subTitle" style={{ color: isLightTheme && "black" }}>
         <span>
           WAS ESTABLISHED IN THE YEAR 2005 TO GIVE STUDENTS A FOUNDATIONAL
           UNDERSTANDING OF TECHNICAL CONCEPTS AND TO PIQUE THEIR NATURAL
@@ -31,12 +40,16 @@ const MainDiv = () => {
           className="ieeeText"
           style={{
             margin: "20px",
+            color: isLightTheme ? "black" : "white",
           }}
         >
           IEEE WEEK 2025 SOON !!!
         </span>
       </div>
-      <div className="heading" style={{ margin: "20px" }}>
+      <div
+        className="heading"
+        style={{ margin: "20px", color: isLightTheme ? "black" : "white" }}
+      >
         <span>ABOUT IEEE-PCE</span>
       </div>
       <div
@@ -48,7 +61,14 @@ const MainDiv = () => {
         <img src={BigLogo} />
       </div>
 
-      <div className="subTitle" style={{ margin: "20px 55px", width: "70%" }}>
+      <div
+        className="subTitle"
+        style={{
+          margin: "20px 55px",
+          width: "70%",
+          color: isLightTheme ? "black" : "white",
+        }}
+      >
         <span>
           IEEE-PCE: A nexus of and knowledge, where professionals converge to
           shape the future of technology and humanity. From meet-ups to digital
@@ -56,7 +76,14 @@ const MainDiv = () => {
           innovations.
         </span>
       </div>
-      <div className="subTitle" style={{ margin: "20px 55px", width: "70%" }}>
+      <div
+        className="subTitle"
+        style={{
+          margin: "20px 55px",
+          width: "70%",
+          color: isLightTheme ? "black" : "white",
+        }}
+      >
         <span>
           Step into IEEE-PCE's vibrant community, where connections thrive and
           ideas flourish. With access to seminar, conferences,and ample funding,
@@ -64,7 +91,14 @@ const MainDiv = () => {
           advancement and societal betterment.
         </span>
       </div>
-      <div className="subTitle" style={{ margin: "20px 55px", width: "70%" }}>
+      <div
+        className="subTitle"
+        style={{
+          margin: "20px 55px",
+          width: "70%",
+          color: isLightTheme ? "black" : "white",
+        }}
+      >
         <span>
           Join IEEE-PCE and unlock a world of opportunities to connect learn and
           innovate. With a focus on both personal and professional growth, it's
@@ -73,13 +107,27 @@ const MainDiv = () => {
         </span>
       </div>
 
-      <div className="heading" style={{ margin: "22px", fontSize: "37px" }}>
+      <div
+        className="heading"
+        style={{
+          margin: "22px",
+          fontSize: "37px",
+          color: isLightTheme ? "black" : "white",
+        }}
+      >
         <span>UP-COMING EVENTS</span>
       </div>
       <div className="bannerDiv">
         <img src={Banner} style={{ width: "263px", height: "372.184px" }} />
       </div>
-      <div className="heading" style={{ margin: "34px", fontSize: "37px" }}>
+      <div
+        className="heading"
+        style={{
+          margin: "34px",
+          fontSize: "37px",
+          color: isLightTheme ? "black" : "white",
+        }}
+      >
         <span>-CONTACT US-</span>
       </div>
       <div className="socialDiv">

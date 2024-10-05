@@ -1,21 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import logo from "../images/b833e47be783fcf2d618686a08566940.jpeg";
 import logo1 from "../images/Ellipse 17.png";
 import logo2 from "../images/Ellipse 18.png";
 import { Icon } from "@iconify/react";
 import NavPage from "./NavPage";
 import "./Navigation.css";
+import bgContext from "../contexts/bgContext";
 
 const NavigationBar = () => {
   const [showNav, setShowNav] = useState(false); // Default is false to keep it hidden initially
-
+  const { isLightTheme, setisLightTheme } = useContext(bgContext);
   return (
-    <div className="navBar">
+    <div
+      className="navBar"
+      style={{ border: isLightTheme ? "solid 2px" : "", padding: "3px 13px" }}
+    >
       <div className="logoDiv">
         <img className="logo" src={logo} alt="Logo" />
       </div>
       <div className="logoContainer">
-        <div className="logoDiv1">
+        <div className="logoDiv1" onClick={() => setisLightTheme(true)}>
           <img className="logo" src={logo1} alt="Logo1" />
         </div>
         <div className="logoDiv2">

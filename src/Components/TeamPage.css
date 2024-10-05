@@ -1,0 +1,64 @@
+.teamPageDiv {
+  background: linear-gradient(180deg, #0b818e 0%, #0e3748 100%);
+  height: max-content;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading1 {
+  text-align: start;
+  padding: 10px;
+  margin: 10px 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subheading1 {
+  text-align: start;
+  margin: 10px 20px;
+  color: #fff;
+  font-family: "Inria Serif", serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.imgDiv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.imgCont {
+  width: 150px !important; /* 3 images per row on larger screens */
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For tablets and smaller devices */
+  .imgCont {
+    width: calc(50% - 20px); /* 2 images per row on mobile */
+  }
+
+  .heading1 {
+    font-size: 1.5rem;
+  }
+
+  .subheading1 {
+    font-size: 1.2rem;
+  }
+  .teamImg {
+    width: 310px;
+  }
+  img {
+    width: 149px;
+    height: auto;
+  }
+}

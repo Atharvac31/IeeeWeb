@@ -44,7 +44,9 @@ const NavPage = ({ setShowNav }) => {
               <Link to={"/workshop"}>WORKSHOP</Link>
             </li>
             <li>FACULTY</li>
-            <li>TEAM</li>
+            <li>
+              <Link to={"/team"}>TEAM</Link>
+            </li>
             <li>IEEE MOMENTS</li>
           </ul>
         </div>
